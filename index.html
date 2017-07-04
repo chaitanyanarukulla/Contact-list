@@ -9,6 +9,7 @@
   <title>My Contacts</title>
 </head>
 
+
 <body>
 
   <div class="Cointainer"></div>
@@ -66,25 +67,7 @@
     </li>
   </ul>
 
-<script>
-let filertinput = document.getElementById('filterInput');
-      filterInput.addEventListener('keyup', filtnerNames);
-      function filtnerNames(){
-        let filterValue = document.getElementById('filterInput').value.toUpperCase();
-
-        let ul = document.getElementById('names');
-        let li = ul.querySelectorAll('li.collection-item');
-        for(let i = 0 ; i < li.length;i++){
-          let a = li[i].getElementsByTagName('a')[0];
-          if(a.innerHTML.toUpperCase().indexOf(filterValue) >
-          -1){
-            li[i].style.display = '';
-          }else{
-            li[i].style.display = 'none';
-          }
-        }
-      }
-</script>
+<script type="text/javascript" src="contact.js"></script>
   </body>
 
 
